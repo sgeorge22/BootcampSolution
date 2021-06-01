@@ -18,6 +18,8 @@ namespace Bootcamp.Models
         public decimal TargetSalary { get; set; }
         public bool? InBootcamp { get; set; }
 
+        public virtual List<AssessmentScore> AssessmentScores { get; set; }
+
 
         public Student() //Default constructor, not really needed anymore but okay to have 
         { 

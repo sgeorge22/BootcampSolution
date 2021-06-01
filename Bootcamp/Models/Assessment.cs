@@ -15,6 +15,8 @@ namespace Bootcamp.Models
         [Required]
         public int MaxPoints { get; set; }
 
+        public virtual List<AssessmentScore> AssessmentScores { get; set; }
+
         public Assessment()
         {
 
