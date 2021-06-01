@@ -8,6 +8,7 @@ namespace Bootcamp.Models
     public class BootcampContext : DbContext
     {
         public DbSet<Student> Students { get; set; }
+        public DbSet<Assessment> Assessments { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder) // one time sets up the connection between sqlserver - slide311
         {
