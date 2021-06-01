@@ -11,6 +11,13 @@ namespace Bootcamp
         {
             var context = new BootcampContext();
 
+            var scores = from s in context.Students
+                         join asc in context.AssessmentScores
+                         on s.Id equals asc.StudentId
+                         join a in context.Assessments
+                         on asc.AssessmentId equals a.Id
+                         select new { s, asc, a };
+            foreach (var s in scores) { Console.WriteLine($"{s.s.Lastname} {s.asc.ActualScore}"); }
             
 
             var avgPoints = (from asc in context.AssessmentScores
