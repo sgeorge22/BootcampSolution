@@ -64,7 +64,7 @@ namespace Bootcamp.Migrations
 
                     b.HasIndex("StudentId");
 
-                    b.ToTable("AssessmentScore");
+                    b.ToTable("AssessmentScores");
                 });
 
             modelBuilder.Entity("Bootcamp.Models.Student", b =>

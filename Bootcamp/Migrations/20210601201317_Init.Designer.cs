@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bootcamp.Migrations
 {
     [DbContext(typeof(BootcampContext))]
-    [Migration("20210601181157_Added assesment scores class")]
-    partial class Addedassesmentscoresclass
+    [Migration("20210601201317_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -66,7 +66,7 @@ namespace Bootcamp.Migrations
 
                     b.HasIndex("StudentId");
 
-                    b.ToTable("AssessmentScore");
+                    b.ToTable("AssessmentScores");
                 });
 
             modelBuilder.Entity("Bootcamp.Models.Student", b =>

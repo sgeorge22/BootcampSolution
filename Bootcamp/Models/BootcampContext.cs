@@ -9,6 +9,7 @@ namespace Bootcamp.Models
     {
         public DbSet<Student> Students { get; set; }
         public DbSet<Assessment> Assessments { get; set; }
+        public DbSet<AssessmentScore> AssessmentScores { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder) // one time sets up the connection between sqlserver - slide311
         {
